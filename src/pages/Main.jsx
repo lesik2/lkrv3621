@@ -1,7 +1,11 @@
 import React from 'react'
+import MyButton from '../components/ui/MyButton'
 
 export default function Main() {
   return (
-    <h1>Main</h1>
+    <div style={{ height: '100vh',display: 'flex', justifyContent: 'center','alignItems':'center', backgroundColor: '#fff2e6'}}>
+      <MyButton text='Form' onClick={()=>console.log('hi')}/>
+    </div>
+
   )
 }

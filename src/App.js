@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 import Main from './pages/Main';
 import FormBuilder from './pages/FormBuilder';
 import RootLayout from './layouts/RootLayout';
+import './styles/global.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
