@@ -9,15 +9,15 @@ export default function Builder({numberOfInputs, numberOfTextArea,  numberOfChec
     for(let i=0;i<number;i++){
       switch(nameOfInput){
         case nameOfInputs.input:{
-          inputs.push(<input className='build-input' />)
+          inputs.push(<input key={i} className='build-input' />)
           break;
         }
         case nameOfInputs.textArea:{
-          inputs.push(<textarea className='build-textarea' />)
+          inputs.push(<textarea key={i} className='build-textarea' />)
           break;
         }
         case nameOfInputs.checkBox:{
-          inputs.push(<input className='build-checkbox' type='checkbox' />)
+          inputs.push(<input key={i} className='build-checkbox' type='checkbox' />)
           break;
         }
         default: {
@@ -29,10 +29,14 @@ export default function Builder({numberOfInputs, numberOfTextArea,  numberOfChec
     return inputs;
   }
   return (
-    <div className='build-form'>
-      {createDifferentInputs(numberOfTextArea, nameOfInputs.textArea)}
-      {createDifferentInputs(numberOfInputs, nameOfInputs.input)}
-      {createDifferentInputs(numberOfCheckBox, nameOfInputs.checkBox)}
+    <div className='build'>
+      <h2 className='build__title'>Form</h2>
+      <div className='build__form'>
+        {createDifferentInputs(numberOfTextArea, nameOfInputs.textArea)}
+        {createDifferentInputs(numberOfInputs, nameOfInputs.input)}
+        {createDifferentInputs(numberOfCheckBox, nameOfInputs.checkBox)}
+      </div>
     </div>
+    
   )
 }

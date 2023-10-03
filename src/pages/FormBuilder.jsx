@@ -58,6 +58,7 @@ export default function FormBuilder() {
   return (
     <div className='builder-wrapper'>
       <form className='builder-form' onSubmit={handleSubmit}>
+        <h2 className='builder-wrapper__title'>Form Builder</h2>
         {formData.map((item)=>(
           <MyInput
             key={item.id}
