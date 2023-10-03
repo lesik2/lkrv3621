@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../../styles/MyButton.css';
 
-export default function MyButton({text, onClick}) {
+export default function MyButton({text, onClick,padding, fontSize,type}) {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(true);
@@ -11,7 +11,7 @@ export default function MyButton({text, onClick}) {
   }
   return (
     <div onClick={onClick}>
-      <button onClick={handleClick} className={clicked?'custom-button clicked':'custom-button'}>
+      <button type={type} style={{padding:padding, fontSize: fontSize}} onClick={handleClick} className={clicked?'custom-button clicked':'custom-button'}>
         {text}
       </button>
     </div>

@@ -1,0 +1,22 @@
+.builder-wrapper{
+  background-color: '#fff2e6';
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.builder-form{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 15px 15px 70px 15px;
+  border: 3px solid #993d00;
+  border-radius: 10px;
+  position: relative;
+}
+.builder-form__btn{
+  position: absolute;
+  left: 36%;
+  bottom: 10px;
+}

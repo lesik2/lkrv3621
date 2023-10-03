@@ -1,0 +1,37 @@
+.input-wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+.my-input{
+  width: 150px;
+  outline: none;
+  border-radius: 10px;
+  padding: 8px 10px 8px 10px;
+  border: 2px solid #ffb366;
+  font-size: 15px;
+}
+.my-input::placeholder{
+  color: #e67300;
+}
+.my-input:focus{
+  border: 2px solid #e67300;
+}
+.input-wrapper__label{
+  margin-left: 5px;
+  font-size: 18px;
+}
+.input-error{
+  border: 2px solid red;
+}
+.input-container{
+  position: relative;
+}
+.helper-text{
+  font-size: 10px;
+  color: red;
+  position: absolute;
+  bottom: -24px;
+  left: 7px;
+}
