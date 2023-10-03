@@ -43,11 +43,7 @@ export default function FormBuilder() {
   const handleInputs = (e)=>{
     const name = e.target.name;
     setInputsValue({...inputsValue,[name]:e.target.value});
-    setInputsErrors({
-      textarea: false,
-      input: false,
-      checkBox: false,
-    });
+    setInputsErrors({...inputsErrors,[name]:false});
     setBuild(false);
     
   }
