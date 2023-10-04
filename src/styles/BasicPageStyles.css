@@ -1,0 +1,10 @@
+.page-wrapper{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff2e6;
+}
+.page-wrapper__title{
+  text-shadow: 1px 1px 2px #e67300;
+}

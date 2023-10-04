@@ -11,6 +11,10 @@
   border-bottom: 7px solid #e67300;
   transition: background-color 0.3s, transform 0.2s, border-bottom 0.2s;
 }
+.custom-button__small{
+  padding: 5px 25px 5px 25px; 
+  font-size: 15px;
+}
 .custom-button:hover{
   background-color: #ff9933;
 }

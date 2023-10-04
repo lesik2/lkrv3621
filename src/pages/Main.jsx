@@ -1,6 +1,7 @@
 import React from 'react'
 import MyButton from '../components/ui/MyButton'
 import {useNavigate} from 'react-router-dom'
+import '../styles/BasicPageStyles.css'
 
 export default function Main() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ export default function Main() {
     },400)
   }
   return (
-    <div style={{ height: '100vh',display: 'flex', justifyContent: 'center','alignItems':'center', backgroundColor: '#fff2e6'}}>
+    <div className='page-wrapper'>
         <MyButton text='Form' onClick={handleClicked}/>
     </div>
 

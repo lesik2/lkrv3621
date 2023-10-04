@@ -70,8 +70,7 @@ export default function FormBuilder() {
           <MyButton 
             type='submit'
             text='build' 
-            padding='5px 25px 5px 25px' 
-            fontSize='15px'
+            size='small'
           />
         </div>
       </form>
